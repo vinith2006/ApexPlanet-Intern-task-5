@@ -67,7 +67,34 @@
                 opacity: 0;
             }
         }
-        
+        .internships-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.internship-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+.internship-card:hover {
+  transform: translateY(-8px);
+}
+.internship-card h3 {
+  color: #4361ee;
+  margin-bottom: .5rem;
+}
+.internship-card h4 {
+  color: #3a0ca3;
+  margin-bottom: 1rem;
+}
+.internship-card p {
+  color: #6c757d;
+}
+
         /* Header */
         header {
             background-color: rgba(255, 255, 255, 0.95);
@@ -741,7 +768,10 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#internships">Internships</a></li>
                 <li><a href="#contact">Contact</a></li>
+                
+
             </ul>
         </nav>
     </header>
@@ -879,7 +909,7 @@
                         <span class="project-tag">PHP</span>
                         <span class="project-tag">MySQL</span>
                     </div>
-                    <a href="https://github.com/vinith2006/Flight-Reservation-System-new" class="btn">View Details</a>
+                    <a href="https://github.com/vinith2006/Flight-Reservation-System-new" class="btn">Vie w Details</a>
                 </div>
             </div>
             <div class="project-card animate-on-scroll">
@@ -913,6 +943,27 @@
         </div>
     </section>
     
+    <section id="internships" class="section">
+  <div class="section-title">
+    <h2>Internships</h2>
+    <p>Some of the internships I have done to enhance my skills.</p>
+  </div>
+  <div class="internships-grid">
+    <div class="internship-card">
+      <h3>Web Development</h3>
+      <h4>ApexPlanet Software Pvt.Ltd</h4>
+      <p><strong>Duration:</strong> June 2025 - Aug 2025</p>
+      <p>Developed and optimized responsive user interfaces using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="internship-card">
+      <h3>Java Programming</h3>
+      <h4>Synovers</h4>
+      <p><strong>Duration:</strong> July 2025 - July 2025</p>
+      <p>Gained hands-on experience in developing and debugging applications using core Java concepts.</p>
+    </div>
+  </div>
+</section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="section-title">
